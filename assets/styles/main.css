@@ -681,6 +681,8 @@ span {
     text-transform: capitalize;
   }
 }
+/*
+
 @media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .hero {
     border-radius: 3rem;
@@ -693,43 +695,54 @@ span {
   }
   .desktop-nav {
     display: flex;
-    background-color: #fbf5ea;
+    background-color: $white;
     padding-block: 1.6rem;
     border-radius: 1.5rem;
     padding-inline-end: 3rem;
-  }
-  .desktop-nav--list {
-    display: flex;
-  }
-  .desktop-nav--list li {
-    margin-inline-end: 2.5rem;
-  }
-  .desktop-nav .available-badge a {
-    font-weight: 700;
-  }
-  .desktop-nav .available-badge a::before {
-    content: "";
-    display: inline-block;
-    width: 0.6rem;
-    height: 0.6rem;
-    border-radius: 50%;
-    background-color: #4bb924;
-    margin-inline-end: 0.4rem;
-    margin-block-start: 0.4rem;
-  }
-  .desktop-nav a {
-    color: rgb(68, 68, 68);
+
+    &--list {
+      display: flex;
+
+      li {
+        margin-inline-end: 2.5rem;
+      }
+    }
+
+    .available-badge {
+      a {
+        font-weight: 700;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+          background-color: #4bb924;
+          margin-inline-end: 0.4rem;
+          margin-block-start: 0.4rem;
+        }
+      }
+    }
+
+    a {
+      color: $dark-grey;
+    }
   }
   .cta {
     width: 10rem;
   }
-  .header h1 {
-    margin-block-end: 2.5rem;
-  }
-  .header--subheading {
-    margin-block-end: 2.5rem;
+
+  .header {
+    h1 {
+      margin-block-end: 2.5rem;
+    }
+
+    &--subheading {
+      margin-block-end: 2.5rem;
+    }
   }
 }
+*/
 footer {
   margin-block-end: var(--space-section);
   display: grid;
