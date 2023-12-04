@@ -102,6 +102,9 @@
       display: grid;
       row-gap: 4rem;
     }
+    &--item {
+      grid-column: span 12;
+    }
 
     &--title {
       div {

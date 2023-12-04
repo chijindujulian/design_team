@@ -946,6 +946,9 @@ footer {
     display: grid;
     row-gap: 4rem;
   }
+  .problems_we_solve--item {
+    grid-column: span 12;
+  }
   .problems_we_solve--title div {
     display: flex;
     justify-content: space-between;
