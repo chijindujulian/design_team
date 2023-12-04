@@ -1134,6 +1134,23 @@ footer {
     justify-content: center;
     column-gap: 2rem;
   }
+  /*how we work*/
+  .how_we_work {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2rem;
+  }
+  .how_we_work--header {
+    grid-column: span 4;
+  }
+  .how_we_work--list {
+    grid-column: span 8;
+  }
+  .how_we_work--list div:nth-child(1),
+  .how_we_work--list div:nth-child(2),
+  .how_we_work--list div:nth-child(3) {
+    grid-column: span 4;
+    column-gap: 2rem;
+  }
   /*have questions section*/
   .have_questions--content {
     display: grid;
