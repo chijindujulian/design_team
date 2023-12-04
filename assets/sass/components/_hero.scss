@@ -28,6 +28,11 @@
   }
   .desktop-nav {
     display: none;
+
+    &--list {
+      display: none;
+
+    }
   }
 
   .header {
@@ -58,6 +63,8 @@
     padding: var(--space-header-top) var(--space-header-inline)
       var(--space-header-bottom);
     margin-block-end: var(--space-section);
+
+    border-radius: 0rem;
   }
   .cta {
     background-color: $white;
