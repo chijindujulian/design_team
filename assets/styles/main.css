@@ -736,7 +736,7 @@ footer {
   display: grid;
   justify-content: center;
   background-color: #F3F7FF;
-  padding-block: 1rem;
+  padding-block: 2.5rem;
   border-radius: 3rem;
 }
 
