@@ -103,7 +103,7 @@
     }
   }
 }
-@media only screen and (min-width: 640px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 640px) and (-webkit-min-device-pixel-ratio: 1) {
   .problems_we_solve {
     &--list {
       grid-template-columns: repeat(12, 1fr);
@@ -128,7 +128,7 @@
     }
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 639px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
   .what_we_do {
     padding-inline: var(--space-header-inline);
     margin-block-end: var(--space-section);
