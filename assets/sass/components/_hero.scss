@@ -8,6 +8,24 @@
 }
 
 @media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 2rem;
+
+    .mobile-menu-toggle {
+      img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+
+    .mobile-menu {
+      background-color: red;
+    }
+  }
   .desktop-nav {
     display: none;
   }
@@ -40,24 +58,6 @@
     padding: var(--space-header-top) var(--space-header-inline)
       var(--space-header-bottom);
     margin-block-end: var(--space-section);
-  }
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-block-end: 2rem;
-
-    .mobile-menu-toggle {
-      img {
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-      }
-    }
-
-    .mobile-menu {
-      background-color: red;
-    }
   }
   .cta {
     background-color: $white;

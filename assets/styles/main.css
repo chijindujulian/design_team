@@ -624,6 +624,20 @@ span {
 }
 
 @media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 2rem;
+  }
+  .navigation .mobile-menu-toggle img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .navigation .mobile-menu {
+    background-color: red;
+  }
   .desktop-nav {
     display: none;
   }
@@ -646,20 +660,6 @@ span {
     color: #fbf5ea;
     padding: var(--space-header-top) var(--space-header-inline) var(--space-header-bottom);
     margin-block-end: var(--space-section);
-  }
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-block-end: 2rem;
-  }
-  .navigation .mobile-menu-toggle img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  .navigation .mobile-menu {
-    background-color: red;
   }
   .cta {
     background-color: #fbf5ea;
