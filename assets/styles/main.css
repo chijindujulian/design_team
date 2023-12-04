@@ -1074,12 +1074,18 @@ footer {
   }
 }
 @media only screen and (min-device-width: 640px) and (-webkit-min-device-pixel-ratio: 1) {
+  .problems_we_solve {
+    /*
+
+
+    &--item {
+      grid-column: span 6;
+    }
+    */
+  }
   .problems_we_solve--list {
     grid-template-columns: repeat(12, 1fr);
     column-gap: 2rem;
-  }
-  .problems_we_solve--item {
-    grid-column: span 6;
   }
   .how_we_work--list div:nth-child(1),
   .how_we_work--list div:nth-child(2),

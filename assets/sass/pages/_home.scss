@@ -105,7 +105,6 @@
     &--item {
       grid-column: span 12;
     }
-
     &--title {
       div {
         display: flex;
@@ -265,10 +264,13 @@
       grid-template-columns: repeat(12, 1fr);
       column-gap: 2rem;
     }
+    /*
+    
 
     &--item {
       grid-column: span 6;
     }
+    */
   }
   .how_we_work {
     &--list {
