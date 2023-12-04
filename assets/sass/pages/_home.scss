@@ -1,3 +1,133 @@
+
+
+
+
+@media only screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*what_we_do section*/
+  .what_we_do {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &--header {
+      margin-inline-end: 2rem;
+      margin-block-end: var(--space-section);
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-end;
+    }
+
+    &--gallery {
+      display: none;
+    }
+
+    &--gallery_large {
+      display: block;
+    }
+
+    &--cta {
+      display: block;
+      position: relative;
+      left: 35%;
+      z-index: 10;
+      margin-top: 2rem;
+      justify-self: end;
+
+      p {
+        font-family: "baligo-demo";
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        position: absolute;
+        margin-block-start: 2rem;
+        padding-inline-start: 2rem;
+      }
+
+      img {
+        position: absolute;
+      }
+    }
+  }
+  /**/
+  /*problems we solve*/
+  .problems_we_solve {
+    &--list {
+      column-gap: 4rem;
+    }
+
+    &--item {
+      grid-column: span 4;
+    }
+  }
+  /*our plans section*/
+  .our_plans {
+    &--list {
+      display: flex;
+      justify-content: center;
+      column-gap: 2rem;
+    }
+  }
+  /*how we work*/
+  .how_we_work {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2rem;
+
+    &--header {
+      grid-column: span 4;
+    }
+
+    &--list {
+      grid-column: span 8;
+      div:nth-child(1),
+      div:nth-child(2),
+      div:nth-child(3) {
+        grid-column: span 4;
+        column-gap: 2rem;
+      }
+    }
+  }
+  .have_questions {
+    &--content {
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: clamp(3rem, -1.9231rem + 7.6923vw, 5rem);
+    }
+
+    &--image {
+      grid-column: span 6;
+      order: 2;
+    }
+    &--list {
+      grid-column: span 6;
+      order: 1;
+      display: grid;
+      row-gap: 1.5rem;
+    }
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+  .problems_we_solve {
+    &--list {
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 2rem;
+    }
+    /*
+    
+
+    &--item {
+      grid-column: span 6;
+    }
+    */
+  }
+  .how_we_work {
+    &--list {
+      div:nth-child(1),
+      div:nth-child(2),
+      div:nth-child(3) {
+        grid-column: span 6;
+        column-gap: 2rem;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 639px) and (-webkit-min-device-pixel-ratio: 1) {
   .what_we_do {
     padding-inline: var(--space-header-inline);
@@ -254,134 +384,6 @@
 
     h2 {
       margin-block-end: 1.5rem;
-    }
-  }
-}
-
-@media only screen and (min-width: 640px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
-  .problems_we_solve {
-    &--list {
-      grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
-    }
-    /*
-    
-
-    &--item {
-      grid-column: span 6;
-    }
-    */
-  }
-  .how_we_work {
-    &--list {
-      div:nth-child(1),
-      div:nth-child(2),
-      div:nth-child(3) {
-        grid-column: span 6;
-        column-gap: 2rem;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  /*what_we_do section*/
-  .what_we_do {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    &--header {
-      margin-inline-end: 2rem;
-      margin-block-end: var(--space-section);
-      display: flex;
-      flex-direction: column;
-      justify-items: flex-end;
-    }
-
-    &--gallery {
-      display: none;
-    }
-
-    &--gallery_large {
-      display: block;
-    }
-
-    &--cta {
-      display: block;
-      position: relative;
-      left: 35%;
-      z-index: 10;
-      margin-top: 2rem;
-      justify-self: end;
-
-      p {
-        font-family: "baligo-demo";
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        position: absolute;
-        margin-block-start: 2rem;
-        padding-inline-start: 2rem;
-      }
-
-      img {
-        position: absolute;
-      }
-    }
-  }
-  /**/
-  /*problems we solve*/
-  .problems_we_solve {
-    &--list {
-      column-gap: 4rem;
-    }
-
-    &--item {
-      grid-column: span 4;
-    }
-  }
-  /*our plans section*/
-  .our_plans {
-    &--list {
-      display: flex;
-      justify-content: center;
-      column-gap: 2rem;
-    }
-  }
-  /*how we work*/
-  .how_we_work {
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 2rem;
-
-    &--header {
-      grid-column: span 4;
-    }
-
-    &--list {
-      grid-column: span 8;
-      div:nth-child(1),
-      div:nth-child(2),
-      div:nth-child(3) {
-        grid-column: span 4;
-        column-gap: 2rem;
-      }
-    }
-  }
-  .have_questions {
-    &--content {
-      grid-template-columns: repeat(12, 1fr);
-      column-gap: clamp(3rem, -1.9231rem + 7.6923vw, 5rem);
-    }
-
-    &--image {
-      grid-column: span 6;
-      order: 2;
-    }
-    &--list {
-      grid-column: span 6;
-      order: 1;
-      display: grid;
-      row-gap: 1.5rem;
     }
   }
 }
