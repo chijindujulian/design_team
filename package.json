@@ -1,0 +1,13 @@
+{
+  "name": "design_team",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./assets/sass/main.scss ./assets/styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

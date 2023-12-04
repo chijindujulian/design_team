@@ -1,0 +1,132 @@
+.card {
+  display: grid;
+  row-gap: 2rem;
+  padding: 2rem;
+  border: 1px solid #ced5e4;
+  border-radius: 1.5rem;
+  max-width: 21.875rem;
+
+  h3 {
+    color: $dark-grey;
+    font-size: 1.875rem;
+    color: #323541;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #323541;
+  }
+
+  div {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  ul {
+    margin-inline-start: 1rem;
+    display: grid;
+    row-gap: 1rem;
+  }
+  li {
+    list-style-type: disc;
+    font-size: 1rem;
+    color: #323541;
+  }
+
+  span {
+    font-family: "gilroy-medium";
+    font-weight: 500;
+    font-size: var(--p);
+    line-height: 1.3;
+  }
+
+  @media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    grid-column: span 3;
+  }
+}
+
+.cta_primary {
+  background-color: #323541;
+  a {
+    color: $white;
+  }
+}
+
+.card_secondary {
+  background-color: #f3f7ff;
+
+  &--cta {
+    background-color: $brand;
+    margin-block-start: 5.2rem;
+    a {
+      color: $white;
+    }
+  }
+}
+
+.card_cta {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+  border-radius: 8px;
+  height: 3.5rem;
+  a {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+.card_image {
+  max-width: 26rem;
+  max-height: 30rem;
+  background-color: #003aad;
+  border-radius: 1.5rem;
+  display: grid;
+  row-gap: 2.5rem;
+  justify-content: center;
+  padding-block: 2.5rem;
+  margin-block-end: 1.5rem;
+
+  &--img {
+    justify-self: center;
+    background-color: #2556b7;
+    max-width: 10rem;
+    border-radius: 50%;
+  }
+  h3 {
+    color: $white;
+    font-size: clamp(1.875rem, 1.7446rem + 0.6522vw, 2.25rem);
+    text-align: center;
+  }
+  p {
+    display: none;
+    text-align: center;
+    color: #91B1F1;
+  }
+
+  &--cta {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    padding-block: 1.2rem;
+    border-radius: 8px;
+    max-height: 60px;
+    a {
+      color: $brand;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+
+  summary {
+    padding-inline: 1.5rem;
+    font-size: clamp(1.125rem, 0.9946rem + 0.6522vw, 1.5rem);
+    color: #323541;
+  }
+
+  @media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    p {
+      display: block;
+    }
+  }
+}

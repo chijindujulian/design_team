@@ -1,0 +1,138 @@
+/*opens and closes the mobile menu*/
+.hidden {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+/*general styles for the hero section*/
+.hero {
+  background: rgb(0, 58, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 58, 173, 1) 25%,
+    rgba(113, 38, 171, 0.9898809865743172) 60%
+  );
+  color: $white;
+  padding: var(--space-header-top) var(--space-header-inline)
+    var(--space-header-bottom);
+  margin-block-end: var(--space-section);
+
+  @media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    border-radius: 3rem;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 2rem;
+
+  .mobile-menu-toggle {
+    img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+
+  .mobile-menu {
+    background-color: red;
+  }
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.header {
+  h1 {
+    font-size: var(--h1);
+    line-height: 1.2;
+    margin-block-end: 2rem;
+  }
+
+  &--subheading {
+    margin-block-end: 2rem;
+    padding-inline-end: 2rem;
+
+    p {
+      margin-block-end: 0.2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.cta {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+  border-radius: 8px;
+  a {
+    color: $brand;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  @media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    width: 10rem;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .navigation {
+    margin-block-end: 4rem;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+    background-color: $white;
+    padding-block: 1.6rem;
+    border-radius: 1.5rem;
+    padding-inline-end: 3rem;
+
+    &--list {
+      display: flex;
+
+      li {
+        margin-inline-end: 2.5rem;
+      }
+    }
+
+    .available-badge {
+      a {
+        font-weight: 700;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+          background-color: #4bb924;
+          margin-inline-end: 0.4rem;
+          margin-block-start: 0.4rem;
+        }
+      }
+    }
+
+    a {
+      color: $dark-grey;
+    }
+  }
+
+  .header {
+    h1 {
+      margin-block-end: 2.5rem;
+    }
+
+    &--subheading {
+      margin-block-end: 2.5rem;
+    }
+  }
+}
