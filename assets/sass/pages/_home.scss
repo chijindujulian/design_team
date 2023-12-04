@@ -244,6 +244,13 @@
     padding-inline: var(--space-header-inline);
     margin-block-end: var(--space-section);
 
+    &--content {
+      display: grid;
+      justify-content: center;
+      row-gap: 2rem;
+
+    }
+
     h2 {
       margin-block-end: 1.5rem;
     }
@@ -359,7 +366,6 @@
   /*have questions section*/
   .have_questions {
     &--content {
-      display: grid;
       grid-template-columns: repeat(12, 1fr);
       column-gap: clamp(3rem, -1.9231rem + 7.6923vw, 5rem);
     }
